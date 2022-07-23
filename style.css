@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+main {
+  text-align: center;
+  margin: 5.6em 1em;
+  margin-bottom: 4.5em;
+}
+main h1 {
+  color: #fff;
+  font-size: 1.73em;
+  line-height: 1.35em;
+}
+main p {
+  color: rgb(240, 240, 240);
+  padding: 0.2em 0em;
+  padding-bottom: 2em;
+  line-height: 1.7em;
+}
+.violet {
+  background-color: #5d54a3;
+  padding: 0.3em;
+  margin: 1.5em 0em;
+  border-radius: 0.7em;
+  box-shadow: 0 0.4375em 0 0 hsla(0, 0%, 0%, 0.15);
+}
+.violet p {
+  color: rgb(235, 235, 235);
+  padding: 0em 4em;
+  font-weight: 100;
+  font-size: 0.95em;
+  line-height: 1.7em;
+}
+.violet p span {
+  font-weight: 700;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.4375em 0 0 hsla(0, 0%, 0%, 0.15);
+}
+.Form #error1 {
+  position: relative;
+  left: 5em;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.Form #error2 {
+  position: relative;
+  left: 5em;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.Form #error3 {
+  position: relative;
+  left: 5em;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.Form #error4 {
+  position: relative;
+  left: 5em;
+  color: red;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.Form input {
+  padding: 1.5em;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 0.5em;
+}
+.Form input:focus {
+  outline: none !important;
+  border-color: #5d54a3;
+  box-shadow: 0 0 -10px #5d54a3;
+}
+.Form input::before {
+  color: #5d54a3;
+}
+.Form input::placeholder {
+  font-size: 1.05em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.Form input[type='submit'] {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  box-shadow: inset 0 -0.2em 0 0 hsl(154, 52%, 46%);
+  cursor: pointer;
+}
+.Form p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0em 1em;
+}
+.Form p span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  line-height: 0;
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  main h1 {
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.2em;
+  }
+  main p {
+    font-size: 1em;
+  }
+  .left {
+    align-self: center;
+    margin: 0em 8em;
+    margin-right: 0.5em;
+    padding-top: 5em;
+  }
+  form {
+    align-self: center;
+    margin-right: 10em;
+  }
+  .Form {
+    width: 29em;
+    padding: 2em;
+  }
+  .Form p {
+    text-align: center;
+    cursor: pointer;
+  }
+  .Form #error1 {
+    position: relative;
+    left: 13em;
+    color: red;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .Form #error2 {
+    position: relative;
+    left: 13em;
+    color: red;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .Form #error3 {
+    position: relative;
+    left: 13em;
+    color: red;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .Form #error4 {
+    position: relative;
+    left: 13em;
+    color: red;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .Form input {
+    font-weight: 700;
+    font-size: 0.95em;
+    padding-left: 2.5em;
+  }
+  .Form input[type='submit'] {
+    box-shadow: inset 0 -0.3em 0 0 hsl(154, 52%, 46%);
+    border: none;
+  }
+  .Form input[type='submit']:hover {
+    background-color: hsl(153, 53%, 66%);
+  }
+
+  .violet {
+    align-self: center;
+    text-align: center;
+  }
+}
